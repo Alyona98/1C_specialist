@@ -625,7 +625,7 @@ body {
   }
   .header_title_btn {
     position: absolute;
-    top: -84.9px;
+    top: -84.5px;
     right: 50px;
   }
   .header_title_btn .lp_animation_wrapper {
@@ -759,7 +759,7 @@ body {
     padding: 17px 40px;
   }
   .configuration_item:nth-child(2) {
-    height: 140px;
+    height: 130px;
   }
   .configuration_item:nth-child(2) .content_item {
     width: calc(100% - 80px);

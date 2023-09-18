@@ -316,7 +316,7 @@ body {
 .content_item {
   border-radius: 20px;
   border: 1px solid #ABA9AA;
-  padding: 1.0625rem 1.5625rem;
+  padding: 1rem;
 }
 .content_item.item_active {
   border-color: #00D757;
@@ -649,7 +649,7 @@ body {
   width: 100%;
 }
 .industries_line {
-  min-width: 60px;
+  min-width: 54px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -877,7 +877,7 @@ body {
   }
   .header_title_btn {
     position: absolute;
-    top: -85px;
+    top: -84.9px;
     right: 50px;
   }
   .header_title_btn .lp_animation_wrapper {
@@ -916,7 +916,7 @@ body {
     padding: 6.25rem 2.1875rem;
   }
   .modal_box {
-    padding: 0.625rem 2.5rem 1.875rem;
+    padding: 0.625rem 2.5rem 0;
     overflow: auto;
     max-height: calc(100% - 50px);
     width: calc(100% - 10vw);

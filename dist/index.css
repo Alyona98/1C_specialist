@@ -201,7 +201,7 @@ body {
 }
 .txt_head_1 {
   font-size: 4rem;
-  line-height: 4rem;
+  line-height: 4.5rem;
 }
 .btn {
   width: -webkit-max-content;
@@ -232,33 +232,57 @@ body {
   line-height: normal;
   color: #FFFFFF;
 }
-.btn_link svg {
+.btn_link svg * {
   stroke: #ABA9AA;
 }
-.btn_link svg.svg_fill {
+.btn_link svg.svg_fill * {
   stroke: unset;
   fill: #ABA9AA;
 }
-.btn_link:active svg {
+.btn_link:hover {
+  color: #FFFFFF;
+}
+.btn_link:hover svg * {
+  stroke: #FFFFFF;
+}
+.btn_link:hover svg.svg_fill * {
+  stroke: unset;
+  fill: #FFFFFF;
+}
+.btn_link:active {
+  color: #00D757;
+}
+.btn_link:active svg * {
   stroke: #00D757;
 }
-.btn_link:active svg.svg_fill {
+.btn_link:active svg.svg_fill * {
   stroke: unset;
   fill: #00D757;
 }
 .form_label {
   margin-bottom: 10px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .form_input {
   width: 100%;
-  padding: 1.25rem;
+  padding: 1.15rem;
   border-radius: 20px;
   border: 1px solid #ABA9AA;
 }
 .form_input:focus,
 .form_input:active {
   border-color: #00D757;
+}
+.form_input:hover {
+  border-color: #FFFFFF;
+}
+.form_input.attention {
+  border-color: #DF2F2F;
 }
 .main_list {
   display: -webkit-box;

@@ -114,17 +114,36 @@ body {
     .font_size(@head_3);
     color: @main_text;
     & svg {
-        stroke: @secondary;
-        &.svg_fill {
+        & * {
+            stroke: @secondary;
+        }
+        &.svg_fill * {
             stroke: unset;
             fill: @secondary;
         }
     }
-    &:active svg {
-        stroke: @accent;
-        &.svg_fill {
-            stroke: unset;
-            fill: @accent;
+    &:hover {
+        color: @main_text;
+        & svg {
+            & * {
+                stroke: @main_text;
+            }
+            &.svg_fill * {
+                stroke: unset;
+                fill: @main_text;
+            }
+        }
+    }
+    &:active {
+        color: @accent;
+        & svg {
+            & * {
+                stroke: @accent;
+            }
+            &.svg_fill * {
+                stroke: unset;
+                fill: @accent;
+            }
         }
     }
 }
@@ -132,16 +151,23 @@ body {
 .form {
     &_label {
         margin-bottom: 10px;
-        display: block;
+        display: flex;
+        justify-content: space-between;
     }
     &_input {
         width: 100%;
-        padding: 1.25rem;
+        padding: 1.15rem;
         border-radius: 20px;
         border: 1px solid @secondary;
         &:focus,
         &:active {
             border-color: @accent;
+        }
+        &:hover {
+            border-color: @main_text;
+        }
+        &.attention {
+            border-color: @attention;
         }
     }
 }
@@ -166,7 +192,7 @@ body {
 .content_item {
     border-radius: 20px;
     border: 1px solid @secondary;
-    padding: 1.0625rem 1.5625rem;
+    padding: 16px;
     &.item_active {
         border-color: @accent;
         background-color: @accent;

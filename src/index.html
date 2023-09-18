@@ -19,28 +19,28 @@
           </svg>
         </button>
         <h1 class="txt_head_1">Давайте<br>работать <span class="clr_accent">вместе</span>!</h1>
-        <form name="modal_form" class="modal_form" action="" method="">
+        <form id="modal_form" name="modal_form" class="modal_form" action="" method=""  onsubmit="alert('modal_form!');return false">
           <div class="modal_form_contact">
             <div>
-              <label class="form_label txt_head_3">Ваше имя</label>
-              <input name="name" type="text" class="form_input" placeholder="Имя">
-            </div>
+              <label class="form_label txt_head_3">Ваше имя*</label>
+              <input name="name" type="text" class="form_input" placeholder="Имя" required>
+            </div> 
             <div>
               <label class="form_label txt_head_3">Ваш номер телефона</label>
               <input name="tel" type="tel" class="form_input" placeholder="+7 (___) ___-____">
             </div>
             <div>
-              <label class="form_label txt_head_3">Ваш email</label>
-              <input name="email" type="email" class="form_input" placeholder="Email">
+              <label class="form_label txt_head_3">Ваш email*</label>
+              <input name="email" type="email" class="form_input" placeholder="Email" required>
             </div>
           </div>
           <div class="modal_form_task">
             <div class="modal_form_task_description">
-              <label class="form_label txt_head_3">Задача</label>
-              <textarea name="description" class="form_input" placeholder="Опишите задачу или проблему"></textarea>
+              <label class="form_label txt_head_3">Задача*</label>
+              <textarea name="description" class="form_input" placeholder="Опишите задачу или проблему" required></textarea>
             </div>
           </div>
-          <button class="btn modal_btn click_order_consultation" type="submit"> Заказать консультацию</button>
+          <button class="btn modal_btn click_order_consultation" type="submit" form="modal_form"> Заказать консультацию</button>
         </form>
       </div>
     </section>
@@ -245,28 +245,28 @@
           
           <section class="order">
             <h1 class="title txt_head_1">Давайте<br>работать <span class="clr_accent">вместе</span>!</h1>
-            <form name="modal_form" class="modal_form" action="" method="">
+            <form id="content_form" name="content_form" class="modal_form" action="" method=""  onsubmit="alert('content_form!');return false">
               <div class="modal_form_contact">
                 <div>
-                  <label class="form_label txt_head_3">Ваше имя</label>
-                  <input name="name_order" type="text" class="form_input" placeholder="Имя">
+                  <label class="form_label txt_head_3">Ваше имя*</label>
+                  <input name="name_order" type="text" class="form_input" placeholder="Имя" required>
                 </div>
                 <div>
                   <label class="form_label txt_head_3">Ваш номер телефона</label>
                   <input name="tel_order" type="tel" class="form_input" placeholder="+7 (___) ___-____">
                 </div>
                 <div>
-                  <label class="form_label txt_head_3">Ваш email</label>
-                  <input name="email_order" type="email" class="form_input" placeholder="Email">
+                  <label class="form_label txt_head_3">Ваш email*</label>
+                  <input name="email_order" type="email" class="form_input" placeholder="Email" required>
                 </div>
               </div>
               <div class="modal_form_task">
                 <div class="modal_form_task_description">
-                  <label class="form_label txt_head_3">Задача</label>
-                  <textarea name="description_order" class="form_input" placeholder="Опишите задачу или проблему"></textarea>
+                  <label class="form_label txt_head_3">Задача*</label>
+                  <textarea name="description_order" class="form_input" placeholder="Опишите задачу или проблему" required></textarea>
                 </div>
               </div>
-              <button class="btn modal_btn click_save_order" type="submit">Заказать консультацию</button>
+              <button class="btn modal_btn click_save_order" type="submit" form="content_form">Заказать консультацию</button>
             </form>
           </section>
 
